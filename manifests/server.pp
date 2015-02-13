@@ -106,6 +106,6 @@ class galera::server (
     owner   => 'root',
     group   => 'root',
     content => template('galera/wsrep.cnf.erb'),
-    notify  => Service['mysqld'],
+    before  => Service['mysqld'],
   }
 }

@@ -32,7 +32,7 @@ describe 'galera::server', :type => :class do
       'mode'   => '0644',
       'owner'  => 'root',
       'group'  => 'root',
-      'notify' => 'Service[mysqld]'
+      'before' => 'Service[mysqld]'
       )
     }
   end
