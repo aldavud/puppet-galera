@@ -58,6 +58,7 @@
 #         'default-storage-engine' => 'InnoDB',
 #       }
 #     },
+#     package_name            => 'mariadb-galera-cluster',
 #     service_enabled         => true,
 #     service_manage          => true,
 #     root_password           => 'ChangeMe',
