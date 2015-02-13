@@ -52,8 +52,18 @@
 # === Sample Usage:
 # class { 'galera::server':
 #   mysql_server_hash => {
-#     bind_address   => '0.0.0.0',
-#     default_engine => 'InnoDB',
+#     override_options        => {
+#       'mysqld' => {
+#         'bind-address'           => '0.0.0.0',
+#         'default-storage-engine' => 'InnoDB',
+#       }
+#     },
+#     service_enabled         => true,
+#     service_manage          => true,
+#     service_name            => 'mariadb',
+#     root_password           => 'ChangeMe',
+#     restart                 => false,
+#     remove_default_accounts => true,
 #   },
 #   wsrep_cluster_name => 'galera_cluster',
 #   wsrep_sst_method   => 'rsync'
