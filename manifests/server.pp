@@ -60,7 +60,6 @@
 #     },
 #     service_enabled         => true,
 #     service_manage          => true,
-#     service_name            => 'mariadb',
 #     root_password           => 'ChangeMe',
 #     restart                 => false,
 #     remove_default_accounts => true,
