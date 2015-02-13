@@ -96,7 +96,7 @@ class galera::server (
   $wsrep_node_address    = undef,
   $wsrep_provider        = '/usr/lib64/galera/libgalera_smm.so',
   $wsrep_cluster_name    = 'galera_cluster',
-  $wsrep_cluster_members = [ $::ipaddress ],
+  $wsrep_cluster_members = [],
   $wsrep_sst_method      = 'rsync',
   $wsrep_sst_username    = 'root',
   $wsrep_sst_password    = undef,
